@@ -14,6 +14,51 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return appleapicdevAPI.post(`/api/v1/signup/`, payload)
 }
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_list(
+  payload
+) {
+  return appleapicdevAPI.get(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/`
+  )
+}
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_create(
+  payload
+) {
+  return appleapicdevAPI.post(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/`,
+    payload
+  )
+}
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_retrieve(
+  payload
+) {
+  return appleapicdevAPI.get(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/${payload.id}/`
+  )
+}
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_update(
+  payload
+) {
+  return appleapicdevAPI.put(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/${payload.id}/`,
+    payload
+  )
+}
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_partial_update(
+  payload
+) {
+  return appleapicdevAPI.patch(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/${payload.id}/`,
+    payload
+  )
+}
+function api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_destroy(
+  payload
+) {
+  return appleapicdevAPI.delete(
+    `/api/v1/ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf/${payload.id}/`
+  )
+}
 function rest_auth_login_create(payload) {
   return appleapicdevAPI.post(`/rest-auth/login/`, payload)
 }
@@ -51,6 +96,12 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_list,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_create,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_retrieve,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_update,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_partial_update,
+  api_v1_ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf_destroy,
   rest_auth_login_create,
   rest_auth_logout_retrieve,
   rest_auth_logout_create,
