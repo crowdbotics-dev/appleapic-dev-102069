@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf
+admin.site.register(Ttrtdfsyauhdjfdgkjmjngkjsdngjknsdgkjnsjdngkjdngkjnsdkjgnkjdfsngkjdsf)
 
 # Register your models here.
