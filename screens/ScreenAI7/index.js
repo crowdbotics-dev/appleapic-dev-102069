@@ -1,16 +1,35 @@
 import React from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, SafeAreaView } from "react-native";
 
-const SignUpScreen = () => {
+const HealthScreen = () => {
   return <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Sign Up</Text>
-      <View style={styles.formContainer}>
-        <TextInput style={styles.input} placeholder="Full Name" placeholderTextColor="#999" />
-        <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#999" />
-        <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#999" secureTextEntry />
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Section 1</Text>
+        <Text>Date</Text>
+        <Text>Title</Text>
+        <Text>Short Description</Text>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Section 2</Text>
+        <View style={styles.imageContainer}>
+          {
+          /* Display uploaded image/images */
+        }
+        </View>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Sign Up</Text>
+          <Text style={styles.buttonText}>Remove</Text>
         </TouchableOpacity>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Section 3</Text>
+        <Text>Daily Health Events Logging</Text>
+        <TextInput style={styles.input} placeholder="Symptom Input" placeholderTextColor="#999" />
+        <TextInput style={styles.input} placeholder="Severity Scale" placeholderTextColor="#999" />
+        <TextInput style={styles.input} placeholder="Duration Recording" placeholderTextColor="#999" />
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Section 4</Text>
+        <Text>Food Entry</Text>
       </View>
     </SafeAreaView>;
 };
@@ -18,25 +37,21 @@ const SignUpScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "blue",
-    justifyContent: "center",
-    alignItems: "center"
+    backgroundColor: "white",
+    padding: 20
   },
-  title: {
-    fontSize: 24,
+  section: {
+    marginBottom: 20
+  },
+  sectionTitle: {
+    fontSize: 18,
     fontWeight: "bold",
-    marginBottom: 20
+    marginBottom: 10
   },
-  formContainer: {
-    width: "80%"
-  },
-  input: {
-    height: 50,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 20
+  imageContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10
   },
   button: {
     backgroundColor: "#007AFF",
@@ -49,6 +64,14 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     fontWeight: "bold"
+  },
+  input: {
+    height: 50,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 10
   }
 });
-export default SignUpScreen;
+export default HealthScreen;
